@@ -1,0 +1,31 @@
+kind = "video"
+previewPath = "/video-invitacion/"
+title = "Video Invitación Gemelos"
+version = "1.0.0"
+id = "artifacts/video-invitacion"
+router = "path"
+
+[[integratedSkills]]
+name = "video-js"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/video-invitacion/" ]
+localPort = 21369
+
+[services.development]
+run = "pnpm --filter @workspace/video-invitacion run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/video-invitacion", "run", "build" ]
+publicDir = "artifacts/video-invitacion/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21369"
+BASE_PATH = "/video-invitacion/"

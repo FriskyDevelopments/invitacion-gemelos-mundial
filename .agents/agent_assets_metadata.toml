@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "0v1XlCG0TxUT0YH0tLnpn"
+uri = "file://artifacts/video-invitacion/src/assets/images/stadium.png"
+type = "image"
+title = "Cinematic soccer stadium pitch"
+
+[[generated]]
+id = "ymb74O700KFNLcB7To-MG"
+uri = "file://artifacts/video-invitacion/src/assets/images/soccer-ball.png"
+type = "image"
+title = "Soccer ball"
+
+[[generated]]
+id = "5Q9VuBU4QADrS1K2j_jRN"
+uri = "file://artifacts/video-invitacion/src/assets/images/confetti.png"
+type = "image"
+title = "Golden confetti burst"
