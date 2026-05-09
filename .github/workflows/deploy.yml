@@ -38,5 +38,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: invitacion-gemelos-mundial
-          directory: artifacts/invitacion/dist
+          directory: artifacts/invitacion/dist/public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
